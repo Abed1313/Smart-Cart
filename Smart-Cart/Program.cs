@@ -4,8 +4,15 @@
     {
         static void Main(string[] args)
         {
+            try
+            {
+                ShoppingCart.AddOrRemoveItems();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             
-            ShoppingCart.AddOrRemoveItems();
         }
     }
 }
